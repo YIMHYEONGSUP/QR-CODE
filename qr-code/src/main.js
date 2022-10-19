@@ -1,14 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import VueQrcodeReader from "vue-qrcode-reader";
+import VueQrCodeReader from "vue-qrcode-reader";
 import QrReader from 'vue3-qrcode-reader';
 
 const app = createApp(App);
 
-app.use(VueQrcodeReader)
+
+app.use(VueQrCodeReader)
     .use(QrReader)
     .mount('#app')
 
-
-app.config.globalProperties.qr = QrReader;

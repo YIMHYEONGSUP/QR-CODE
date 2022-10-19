@@ -9,9 +9,7 @@
         </select>
         </p>
 
-        <QrStream :key="_uid" @decode="onDecode">
-
-        </QrStream>
+        <QrStream :key="_uid" @decode="onDecode" @init="logErrors"></QrStream>
 
         <!-- 카메라  -->
         <QrCamera></QrCamera>
