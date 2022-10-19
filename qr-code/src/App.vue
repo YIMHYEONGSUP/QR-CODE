@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <div id="app">
+    <h2> QR CODE </h2>
+
+    <QrCode></QrCode>
+    <QrCapture></QrCapture>
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import QrCode from './components/QrCode.vue'
+import QrCapture from './components/QrCapture.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    QrCode,
+    QrCapture
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
